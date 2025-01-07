@@ -10,5 +10,6 @@ int main (){
 	scanf ("%d",&a);
 	printf ("Nhap vao so b: ");
 	scanf ("%d",&b);
-	printf ("Tong hai so %d va %d la: %d",a,b,tong(&a,&b,sum));
+	tong (&a,&b,&sum)
+	printf ("Tong hai so %d va %d la: %d",a,b,sum);
 }
