@@ -8,14 +8,15 @@ int main(){
 	char *ptrrev, *ptrinput;
 	printf ("Nhap vao mot chuoi: ");
 	fgets (inputString,sizeof(inputString),stdin);
+	inputString[strcspn(inputString,"\n")] ='\0';
 	int n =strlen(inputString);
 	ptrrev=reverseString;
 	ptrinput=inputString;
 	for (int i=n-1;i>=0;i--){
-		if (*(ptrinput+i)!='/0'){    //Em de cho no neu no tro vao ky tu xuong dong thi no khong in ra nhung de trong "" thi bi loi. Thay sua giup em voi a.
+		if (*(ptrinput+i) != '/0'){ 
 		*(ptrrev++) = *(ptrinput+i);  
 	}
 	}
-	printf ("Chuoi dau tien la: \n%s", inputString);
+	printf ("Chuoi dau tien la: %s\n", inputString);
 	printf ("Chuoi thu hai la: %s\n", reverseString);
 }
