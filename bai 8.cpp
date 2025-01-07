@@ -12,7 +12,7 @@ int main(){
 	ptrrev=reverseString;
 	ptrinput=inputString;
 	for (int i=n-1;i>=0;i--){
-		if (*(ptrinput+i)!='/0'){    //Em de cho no neu no tro vao ky tu xuong dong thi no khong in nhung ma no van in ra, thay sua giup em voi a.
+		if (*(ptrinput+i)!='/0'){    //Em de cho no neu no tro vao ky tu xuong dong thi no khong in ra nhung de trong "" thi bi loi. Thay sua giup em voi a.
 		*(ptrrev++) = *(ptrinput+i);  
 	}
 	}
